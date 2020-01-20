@@ -12,7 +12,6 @@ class EntryList(ListView):
 
 
 	def get(self, request):
-		print('Hawkguy!')
 		posts = Post.objects.all()
 		print(posts)
 		return HttpResponse(posts)
