@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+<!-- {% load static %}  -->
+{% block content %}
+<h1>Remove a bottle</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <p>Not a fan of {post.title} anymore?</p>
+    <input type="submit" value="Confirm"/>
+</form>
+
+{% endblock content %}
